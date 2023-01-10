@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/homef"
+        android:title="PELICULAS"
+
+        android:visible="true" />
+
+
+    <item
+        android:id="@+id/pelicuf"
+        android:title="SERIES"
+        android:visible="true" />
+
+
+    <item
+        android:id="@+id/peliculasf"
+        android:title="CATEGORIA"
+        android:visible="true"
+
+        />
+
+
+</menu>
