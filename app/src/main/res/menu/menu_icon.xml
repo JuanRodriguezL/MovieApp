@@ -17,7 +17,7 @@
 
 
     <item
-        android:id="@+id/peliculasf"
+        android:id="@+id/seriesf"
         android:icon="@drawable/ic_baseline_live_tv_24"
         android:title=""
 

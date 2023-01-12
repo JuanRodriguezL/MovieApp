@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class PeliculasInfo {
 
-    public ArrayList<PeliculaEntidades> getPeliculaEntidadesArrayList() {
-        return peliculaEntidadesArrayList;
+    public ArrayList<PeliculaEntidades> getResults() {
+        return results;
     }
 
-    public void setPeliculaEntidadesArrayList(ArrayList<PeliculaEntidades> peliculaEntidadesArrayList) {
-        this.peliculaEntidadesArrayList = peliculaEntidadesArrayList;
+    public void setResults(ArrayList<PeliculaEntidades> results) {
+        this.results = results;
     }
 
-    ArrayList<PeliculaEntidades> peliculaEntidadesArrayList;
+    ArrayList<PeliculaEntidades> results;
 }

@@ -16,7 +16,7 @@
 
 
     <item
-        android:id="@+id/peliculasf"
+        android:id="@+id/categoriaf"
         android:title="CATEGORIA"
         android:visible="true"
 

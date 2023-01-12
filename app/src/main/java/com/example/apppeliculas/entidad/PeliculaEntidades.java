@@ -1,9 +1,14 @@
 package com.example.apppeliculas.entidad;
 
+import com.google.gson.annotations.SerializedName;
+
 public class PeliculaEntidades {
-    String backdrop_path;
-    String original_title;
+    @SerializedName("backdrop_path")
+    String backdropPath;
+    @SerializedName("original_title")
+    String originalTitle;
     String overview;
-    String release_date;
+    @SerializedName("release_date")
+    String releaseDate;
 
 }

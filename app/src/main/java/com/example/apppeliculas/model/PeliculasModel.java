@@ -1,5 +1,6 @@
 package com.example.apppeliculas.model;
 
+import com.example.apppeliculas.entidad.PeliculasInfo;
 import com.example.apppeliculas.interf.ImvpPelicula;
 import com.example.apppeliculas.interf.PeliculaService;
 
@@ -13,6 +14,7 @@ public class PeliculasModel implements ImvpPelicula.Model {
     ImvpPelicula.Presenter presenter;
     String ApiKey = "323ec36a8c772aafdd22991235ba0ce5";
 
+    PeliculasInfo peliculasInfo;
 
     public PeliculasModel(ImvpPelicula.Presenter presenterP) {
         this.presenter = presenterP;
@@ -21,22 +23,22 @@ public class PeliculasModel implements ImvpPelicula.Model {
 
     @Override
     public void ConsultarListaPeliculaM() {
-
+        peliculasInfo = new PeliculasInfo();
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://api.themoviedb.org")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
         PeliculaService peliculaService = retrofit.create(PeliculaService.class);
-        Call<String> call = peliculaService.getCharacterList(ApiKey);
-        call.enqueue(new Callback<String>() {
+        Call<PeliculasInfo> call = peliculaService.getCharacterList(ApiKey);
+        call.enqueue(new Callback<PeliculasInfo>() {
             @Override
-            public void onResponse(Call<String> call, Response<String> response) {
-
+            public void onResponse(Call<PeliculasInfo> call, Response<PeliculasInfo> response) {
+                System.out.println(response.body());
             }
 
             @Override
-            public void onFailure(Call<String> call, Throwable t) {
+            public void onFailure(Call<PeliculasInfo> call, Throwable t) {
 
             }
         });
