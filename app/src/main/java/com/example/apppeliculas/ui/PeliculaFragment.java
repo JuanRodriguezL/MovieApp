@@ -8,14 +8,19 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.apppeliculas.R;
+import com.example.apppeliculas.adapter.PeliculasAdapter;
+import com.example.apppeliculas.entidad.PeliculasInfo;
 import com.example.apppeliculas.interf.ImvpPelicula;
 import com.example.apppeliculas.presenter.PeliculaPresenter;
 
 
 public class PeliculaFragment extends Fragment implements ImvpPelicula.View {
     ImvpPelicula.Presenter presenter;
+    PeliculasAdapter adapter;
+    RecyclerView recyclerView;
 
     public PeliculaFragment() {
         // Required empty public constructor
@@ -37,7 +42,8 @@ public class PeliculaFragment extends Fragment implements ImvpPelicula.View {
     }
 
     @Override
-    public void RecyclerPeliculas() {
+    public void RecyclerPeliculas(PeliculasInfo peliculasInfo) {
+
 
     }
 }

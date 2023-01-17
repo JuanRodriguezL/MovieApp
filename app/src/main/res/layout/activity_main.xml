@@ -86,7 +86,7 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                  android:layout_marginLeft="5dp"
+                   android:layout_marginLeft="5dp"
                     android:textStyle="italic"
                     android:text="Gossip Girl"
                     android:textColor="@color/white"
@@ -94,7 +94,8 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp" />
+                    android:layout_height="250dp"
+                    android:orientation="horizontal" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"

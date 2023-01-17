@@ -34,7 +34,8 @@ public class PeliculasModel implements ImvpPelicula.Model {
         call.enqueue(new Callback<PeliculasInfo>() {
             @Override
             public void onResponse(Call<PeliculasInfo> call, Response<PeliculasInfo> response) {
-                System.out.println(response.body());
+                peliculasInfo = response.body();
+                presenter.RecyclerPeliculaP(peliculasInfo);
             }
 
             @Override
